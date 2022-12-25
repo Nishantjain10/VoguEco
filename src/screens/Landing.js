@@ -1,19 +1,24 @@
 import Navbar from "../components/Navbar";
-import heroImg from "../assets/heroImg.jpg";
+import bgImg from "../assets/bgimg.png";
 import Hero from "../components/Hero";
+import Issues from "../components/Issues";
+import Solutions from "../components/Solutions";
+import Counter from "../components/Counter";
+import Footer from "../components/Footer";
 
 function Landing() {
-    return (
-      <div className="App font-poppins">
-        <div style={{ backgroundImage: `url(${heroImg})` }}>
-          <Navbar />
-          <Hero />
-        </div>
-        <div>
-          <h1>Card</h1>
-        </div>
+  return (
+    <div className="App font-poppins">
+      <div style={{ backgroundImage: `url(${bgImg})` }}>
+        <Navbar />
+        <Hero />
+        <Issues />
+        <Solutions />
+        <Counter />
+        <Footer />
       </div>
-    );
-  }
-  
-  export default Landing;
+    </div>
+  );
+}
+
+export default Landing;
